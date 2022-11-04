@@ -23,7 +23,7 @@ sf_usa <- ne_states(country = "United States of America", returnclass = "sf")
 sf_vermont <- sf_usa %>% 
   filter(name == "Vermont")
 
-# get the elevation data for andorra --------------------------------------
+# get the elevation data for vermont --------------------------------------
 dem_vermont <- get_elev_raster(locations = sf_vermont, z = 11, clip = "locations", neg_to_na = "TRUE")
 
 # reduced the number of rows ----------------------------------------------
