@@ -7,6 +7,7 @@ library(showtext)
 library(sf)
 library(rnaturalearth)
 library(elevatr)
+library(ggridges)
 
 # add font ----------------------------------------------------------------
 font_add_google(name = "Courier Prime", family = "Courier Prime")
