@@ -48,5 +48,5 @@ ggplot() +
        caption = "\n\n#30DayMapChallenge | Data: data.gov | Design: Ryan Hart")
 
 # save plot ---------------------------------------------------------------
-ggsave(paste0("primary_road_network_", format(Sys.time(), "%d%m%Y"), ".png"), dpi = 320, width = 8, height = 7)
+ggsave(paste0("primary_roads_network_", format(Sys.time(), "%d%m%Y"), ".png"), dpi = 320, width = 8, height = 7)
 
