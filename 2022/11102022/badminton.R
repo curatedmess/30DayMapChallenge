@@ -69,7 +69,7 @@ shuttlecock2_img <- magick::image_write(shuttlecock, path = "shuttlecock2.img", 
 df %>% 
   ggplot() +
   geom_polygon_pattern(data = map_data("usa"), aes(x = long, y = lat, group = group), pattern_filename = racket_img, pattern_type = "expand", pattern = "image") +
-  geom_image(data = osm_locations, aes(x, y, image = shuttlecock2_img), nudge_x = 0.5, nudge_y = 0.5) +
+  geom_image(data = osm_locations, aes(x, y, image = shuttlecock2_img), nudge_x = 0.6, nudge_y = 0.6) +
   coord_map(clip="off") +
   theme_void() +
   theme(plot.title = element_text(family = font1, size = 32, hjust = 0.5, face="bold", color = "#121212"),
