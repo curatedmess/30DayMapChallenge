@@ -64,7 +64,7 @@ crop_water <- st_intersection(boundary, water$osm_multipolygons)
   geom_sf(data = crop_streets, inherit.aes = FALSE, color = "#8B8B81", size = .25)  +
   geom_point(data = df, aes(x = coords.x1, y = coords.x2), color = "red") +
   annotate(geom = "text", y = 38.86, x = -77.14, label = "FIRE\nSTATIONS", hjust = "left", family = font, size = 10, color = "red", lineheight = 0.75) +
-  annotate(geom = "text", y = 38.845, x = -77.14, label = "Washington DC", hjust = "left", family = font2, size = 5.5, color = "#000000") +
+  annotate(geom = "text", y = 38.845, x = -77.14, label = "Washington, D.C.", hjust = "left", family = font2, size = 5.5, color = "#000000") +
   coord_sf() +
   theme_void() +
   theme(plot.caption = element_text(family = font2, hjust = 0.5, size = 10),
