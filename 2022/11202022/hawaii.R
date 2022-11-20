@@ -11,7 +11,6 @@ library(elevatr)
 library(metR)
 library(scico)
 
-
 # add font ----------------------------------------------------------------
 font_add_google(name = "Karla", family = "Karla")
 font <- "Karla"
@@ -20,7 +19,7 @@ font <- "Karla"
 showtext_auto()
 showtext_opts(dpi = 320)
 
-# get island shape data for Society Islands -------------------------------
+# get island shape data for Hawaiian Islands -------------------------------
 sf_islands <- ne_states(country = "United States of America", returnclass = "sf") %>% 
         filter(name %in% c("Hawaii"))
 
