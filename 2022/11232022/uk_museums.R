@@ -53,7 +53,7 @@ ggplot() +
         plot.background = element_rect(color = NA, fill = "#F2F2F2"),
         panel.background = element_rect(color = NA, fill = "#F2F2F2")) +
   labs(title = "4,190 MUSEUMS ACROSS THE UK",
-       caption = "\n\n#TidyTuesday & #30DayMapChallenge | Data: Museweb | Design: Ryan Hart")
+       caption = "\n\n#TidyTuesday & #30DayMapChallenge | Data: MuseWeb | Design: Ryan Hart")
 
 # save plot ---------------------------------------------------------------
 ggsave(paste0("uk_museums_", format(Sys.time(), "%d%m%Y"), ".png"), dpi = 320, width = 6, height = 6)
