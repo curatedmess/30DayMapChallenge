@@ -52,5 +52,5 @@ ggplot() +
        caption = "\n\n#30DayMapChallenge | Data: OpenStreetMap: key=shop | Design: Ryan Hart")
 
 # save plot ---------------------------------------------------------------
-ggsave(paste0("zeros_", format(Sys.time(), "%d%m%Y"), ".png"), dpi = 320, width = 6, height = 6)
+ggsave(paste0("zeros_", format(Sys.time(), "%d%m%Y"), ".png"), dpi = 320, width = 6, height = 5)
 
