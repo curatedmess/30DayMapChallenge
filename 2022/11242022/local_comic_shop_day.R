@@ -71,14 +71,14 @@ world <- ne_countries(scale = "large", returnclass = "sf")
 # ocean detail ------------------------------------------------------------
 ocean <- st_point(x = c(0,0)) %>%
   st_buffer(dist = 6371000) %>%
-  st_sfc(crs = "+proj=ortho +lat_0=35 +lon_0=-100")
+  st_sfc(crs = "+proj=ortho +lat_0=33 +lon_0=-100")
 
 # create plot -------------------------------------------------------------
 ggplot() +
   geom_sf(data = ocean, fill = "#0393da", color = NA) +
   geom_sf(data = world, fill = "#cadb2a", color = "#28282B", size = 0.25) +
   geom_sf(data = df_sf, color = "#be1a87", size = 0.4) +
-  coord_sf(crs = "+proj=ortho +lat_0=35 +lon_0=-100") +
+  coord_sf(crs = "+proj=ortho +lat_0=33 +lon_0=-100") +
   theme_void() +
   theme(plot.title = element_text(family = font1, size = 32, hjust = 0.5, color = "#28282B"),
         plot.title.position = "plot",
