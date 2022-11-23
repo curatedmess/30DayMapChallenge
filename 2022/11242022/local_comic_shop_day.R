@@ -91,7 +91,7 @@ ggplot() +
         panel.background = element_rect(color = NA, fill = "#F2F2F2")) +
   labs(title = "Local Comic Shop Day",
        subtitle = "November 23, 2022",
-       caption = "\n\n#30DayMapChallenge | Data: localcomicshopday.com | Design: Ryan Hart")
+       caption = "\n#30DayMapChallenge | Data: localcomicshopday.com | Design: Ryan Hart")
 
 # save plot ---------------------------------------------------------------
 ggsave(paste0("local_comic_shop_day_", format(Sys.time(), "%d%m%Y"), ".png"), dpi = 320, width = 6, height = 6)
