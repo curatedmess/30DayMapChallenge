@@ -96,7 +96,7 @@ br <- ggplot() +
        subtitle = "Summit County, Colorado\n")
 
 # combine plots -----------------------------------------------------------
-final <- rr | plot_spacer() | br
+final <- br | plot_spacer() | rr
 
 final + plot_layout(widths =c(5, 0.5, 5)) + plot_annotation(caption = "\n#30DayMapChallenge | Design: Ryan Hart") &
   theme(plot.margin = margin(0.5, 0.5, 0.5, 0.5,"cm"),
