@@ -98,12 +98,12 @@ br <- ggplot() +
 # combine plots -----------------------------------------------------------
 final <- br | plot_spacer() | rr
 
-final + plot_layout(widths =c(5, 0.5, 5)) + plot_annotation(caption = "\n#30DayMapChallenge | Design: Ryan Hart") &
+final + plot_layout(widths =c(5, 0.1, 5)) + plot_annotation(caption = "\n#30DayMapChallenge | Design: Ryan Hart") &
   theme(plot.margin = margin(0.5, 0.5, 0.5, 0.5,"cm"),
         plot.background = element_rect(color = NA, fill = "#28282B"),
         panel.background = element_rect(color = NA, fill = "#28282B"),
         plot.caption = element_text(size = 10, hjust = 0.5, family = font, color = "#F2F2F2")) 
 
 # save plot ---------------------------------------------------------------
-ggsave(paste0("two_towns_", format(Sys.time(), "%d%m%Y"), ".png"), dpi = 320, width = 10, height = 6)
+ggsave(paste0("two_towns_", format(Sys.time(), "%d%m%Y"), ".png"), dpi = 320, width = 9, height = 6)
 
