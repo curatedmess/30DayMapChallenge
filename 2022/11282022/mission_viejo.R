@@ -133,7 +133,7 @@ mv <- image_read("mv_highres.png") %>%
   image_annotate("MISSION VIEJO", color = "black", size = 300, weight = 1000, 
                  gravity = "northwest",location = "+400+500") %>% 
   image_annotate("California", color = "black", size = 250,  gravity = "northwest", 
-                 location = "+400+8000") %>% 
+                 location = "+400+800") %>% 
   image_annotate("#30DayMapChallenge | Design: Ryan Hart", color = "black", size = 100, 
                  gravity = "south", location = "+0+500") %>% 
 image_write("mv_highres_final.png")
