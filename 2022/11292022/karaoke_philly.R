@@ -72,8 +72,9 @@ ggplot() +
   geom_sf(data = philly_links$osm_lines, inherit.aes = FALSE, color = "#F2F2F2", size = 0.5) +
   geom_sf(data = philly_small$osm_lines, inherit.aes = FALSE, color = "#F2F2F2", size = 0.25) +
   geom_sf(data = buildings, inherit.aes = FALSE, color = "#8B8B81") +
-  geom_sf(data = points_sf, aes(color = name), size = 6, alpha = 0.8) +
+  geom_sf(data = points_sf, aes(color = name), size = 8, alpha = 0.8) +
   scale_color_manual(values = met.brewer("Klimt", 3)) +
+  guides(color = guide_legend(override.aes = list(size = 6))) +
   #coord_sf() +
   coord_sf(xlim = c(-75.164, -75.151), ylim = c(39.950, 39.958)) +
   theme_void() +
